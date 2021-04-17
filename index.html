@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/yotsuba.css" id="style-yotsuba" title="Yotsuba" disabled />
+    <link rel="stylesheet" href="./styles/tomorrow.css" id="style-tomorrow" title="Tomorrow" disabled />
     <link rel="stylesheet" href="./styles/dev.css" id="style-dev" title="Dev" disabled />
     <script src="./scripts/main.js"></script>
   </head>
@@ -18,6 +19,7 @@
           <label for="style-selector">Style:</label>
           <select id="style-selector" onchange="SettingsInput('style')">
             <option value="style-yotsuba">Yotsuba</option>
+            <option value="style-tomorrow">Tomorrow</option>
             <option value="style-dev">Dev</option>
           </select>
         </div>
@@ -45,6 +47,9 @@
       </div>
     </div>
     <div id="content-external">
+      <noscript>
+        <h1>Page will not work without javascript. Don't forget to take your meds.</h1>
+      </noscript>
       <div id="content"> </div>
     </div>
   </body>

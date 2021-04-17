@@ -29,21 +29,19 @@ const SETTINGS = new Map([
     }]
 ]);
 
-const STYLES = ['style-yotsuba', 'style-dev'];
+const STYLES = ['style-yotsuba', 'style-tomorrow', 'style-dev'];
 
 /** default text to parse on load */
 const DEFAULT_TEXT = `\
-Welcome to greentextizer,
-this is an example.
-
+Welcome to greentextizer, this is a text example.
 
 >green text is green
 <pink text is pink
-sometimes not
 **spoilers don't work**
 
-Press the buttons on top to start
-Press 'Apply' while the input field is empty, display this text again and test parsing settings
+Press the buttons above to start.
+Press 'Apply' while the input field is empty to display this text again and test parsing settings, or styles.
+
 
 Long parahraph:
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
