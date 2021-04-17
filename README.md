@@ -1,6 +1,6 @@
 # greentextizer
 Turn your black-and-white, unformatted green-text stories into GREEN-text stories!
-You can open the page [here](sotakebk.github.io/greentextizer/), or download the source code for offline enjoyment. It should work. Probably.
+You can open the page [here](https://sotakebk.github.io/greentextizer/), or download the source code for offline enjoyment. It should work. Probably.
 
 ## Q&A
 #### Why?
