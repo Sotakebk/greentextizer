@@ -3,13 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <title>Greentextizer</title>
-    <link rel="stylesheet" title="switch" href="./styles/general.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/yotsuba.css" id="style-yotsuba" title="Yotsuba" disabled />
+    <link rel="stylesheet" href="./styles/dev.css" id="style-dev" title="Dev" disabled />
+    <script src="./scripts/main.js"></script>
   </head>
   <body>
-    <textarea id="textarea" placeholder="Paste text here!"></textarea>
-    <button type="button" OnClick="Parse()">Apply</button>
-    <div id="content"></div>
-    <script src="./scripts/default.js"></script>
-    <script src="./scripts/main.js"></script>
+    <h2>Greentextizer</h2>
+    <div class="container rolled" id="style-container">
+      <button onclick="ToggleContainer('style-container')">Display Settings</button>
+      <div class="internal">
+        <div>
+          <label for="style-selector">Style:</label>
+          <select id="style-selector" onchange="SettingsInput('style')">
+            <option value="style-yotsuba">Yotsuba</option>
+            <option value="style-dev">Dev</option>
+          </select>
+        </div>
+        <div>
+          <label for="fontSize-input">Font size:</label>
+          <button class="mono" onclick="FontButton(false)">-</button>
+          <input name="fontSize" id="fontSize-input" autocomplete="off" type="number" min="6" max="256" value="16" onchange="SettingsInput('fontSize')" />
+          <button class="mono" onclick="FontButton(true)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="container rolled" id="input-container">
+      <button onclick="ToggleContainer('input-container')">Input</button>
+      <div class="internal">
+        <div>
+          <label for="line-selector">Empty line handling:</label>
+          <select id="line-selector" onchange="SettingsInput('lineBehavior')">
+            <option value="0">Do not remove</option>
+            <option value="1">Remove single empty lines</option>
+            <option value="2">Remove all empty lines</option>
+          </select>
+        </div>
+        <textarea id="textarea" placeholder="Paste text here!"></textarea>
+        <button type="button" OnClick="Apply()">Apply</button>
+      </div>
+    </div>
+    <div id="content-external">
+      <div id="content"> </div>
+    </div>
   </body>
 </html>

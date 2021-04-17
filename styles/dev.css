@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    background-color: #e4e4e4;
+}
+
+#content-external {
+    background-color: #d3d3d3;
+}
+
+#content {
+    background-color: #bebebe;
+}
+
+.gr {
+    color: #009b00;
+}
+
+.pi {
+    color: #ad0096;
+}

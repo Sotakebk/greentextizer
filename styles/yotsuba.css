@@ -1,0 +1,60 @@
+body {
+    color: #800000;
+    background: linear-gradient(180deg, #fed6af 0px, rgba(0, 0, 0, 0) 100px);
+    background-size: 100px;
+    background-repeat: repeat-x;
+    background-color: #fffeed;
+    font-family: arial, helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.container {
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    border-left: none;
+    border-top: none;
+    box-shadow: #00000059 0px 0px 2px 0px;
+}
+
+.container.rolled {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container button {
+    width: fit-content;
+    color: #00e;
+    border: none;
+    background: none;
+}
+
+.container button::before {
+    color: #800000;
+    content: "[";
+}
+
+
+.container button::after {
+    color: #800000;
+    content: "]";
+}
+
+#content-external {
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    box-shadow: #00000059 0px 0px 2px 0px;
+}
+
+.gr {
+    color: #789922;
+}
+
+.pi {
+    color: #E0727F;
+}
